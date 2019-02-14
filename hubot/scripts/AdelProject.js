@@ -13,12 +13,12 @@
 module.exports = (robot) => {
 
   robot.hear(/Hello/, function(res) {
-    let responses = ["Hello!", "Hi!","Wetin dey hapun", "ASLAME ALIEKUM MY FRIEND :)", "Welcome to you my Friend :)" ]
+    let responses = ["Hello!", "Hi!","yeb yeb Hi", "ASLAME ALIEKUM MY FRIEND :)", "Welcome to you my Friend :)" ]
     let rand = Math.floor(Math.random() * responses.length)
     return res.send(`${responses[rand]}`);
   });
   robot.hear(/badger/i, (res) => {
-    res.send("Badgers? BADGERS? WE DON'T NEED NO STINKIN BADGERS")
+    res.send("Badgers? BADGERS? YES WE DON'T NEED NO STINKIN ")
   })
   //
   robot.respond(/open the (.*) doors (.*)/i, (res) => {
@@ -38,7 +38,7 @@ module.exports = (robot) => {
   })
   
   robot.hear(/I like Apple/i, (res) => {
-    res.emote('makes a freshly baked Apple')
+    res.emote('makes a good Apple')
   })
   
   const lulz = ['lol', 'rofl', 'lmao']
