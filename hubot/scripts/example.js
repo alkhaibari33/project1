@@ -41,16 +41,16 @@ module.exports = (robot) => {
     res.emote('makes a freshly baked Apple')
   })
   
-  const lulz = ['Mew', 'rofl', 'lmao']
+  const lulz = ['lol', 'rofl', 'lmao']
   
   robot.respond(`/${lulz.join('|')}/i`, (res) => {
     res.send(res.random(lulz))
   })
   
-  robot.respond (/I don 't like Ali-I-am/i, (res) => {
-  room =  'joemanager'
-   robot.messageRoom (room,'Someone does not like Dr. Seus')
-  res.reply  ('That Ali-I-am\nThat Ali-I-am\nI do not like\nthat Ali-I-am')
+  //robot.respond (/I don 't like Ali-I-am/i, (res) => {
+  //room =  'joemanager'
+   //robot.messageRoom (room,'Someone does not like Dr. Seus')
+  //res.reply  ('That Ali-I-am\nThat Ali-I-am\nI do not like\nthat Ali-I-am')
 
   //robot.hear (/Sam-I-am/i, (res) =>
    // room =  res.envelope.user.name
@@ -151,4 +151,4 @@ module.exports = (robot) => {
   //   robot.brain.set('totalSodas', 0)
   //   res.reply('zzzzz')
   // })
-}
+  }
